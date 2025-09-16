@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["@nuxt/types"]
+  },
+  "exclude": [".nuxt", "node_modules"]
+}
