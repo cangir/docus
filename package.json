@@ -11,10 +11,10 @@
   "scripts": {
     "dev": "pnpm run docs:dev",
     "docs:dev": "cd docs && nuxt dev --extends ../layer",
-    "docs:build": "npm build docs --extends ../layer",
-    "dev:prepare": "npm prepare layer && nuxt prepare docs --extends ../layer",
+    "docs:build": "nuxt build docs --extends ../layer",
+    "dev:prepare": "nuxt prepare layer && nuxt prepare docs --extends ../layer",
     "lint": "eslint .",
-    "typecheck": "npm typecheck layer",
+    "typecheck": "nuxt typecheck layer",
     "layer:release": "release-it --config .release-it.layer.json && cd layer && npm publish",
     "cli:release": "release-it --config .release-it.cli.json && cd cli && npm publish",
     "release": "pnpm run layer:release && pnpm run cli:release && release-it"
